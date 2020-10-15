@@ -1,7 +1,7 @@
 ﻿using System;
 namespace InheritanceExercisesOne
 {
-    public class Vehicle
+    public abstract class Vehicle
     {
         int _id;
         string _brand;
@@ -21,6 +21,8 @@ namespace InheritanceExercisesOne
         public string Color { get { return _color; } set { _color = value; } }
 
         public int MaxSpeed { get { return _maxSpeed; } set { _maxSpeed = value; } }
+
+        public abstract string Drive();
 
 
         public Vehicle(int id, string brand, string modelName)
